@@ -3,8 +3,8 @@ import java.sql.*;
 public class UpdateTable {
 
     public void updateTableRun() {
-        Connection c = null;
-        Statement stmt = null;
+        Connection c;
+        Statement stmt;
         try {
             c = DriverManager.getConnection("jdbc:postgresql://localhost:5432/testconnectiondb", "postgres", "123");
 

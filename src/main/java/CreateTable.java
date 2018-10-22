@@ -5,8 +5,8 @@ import java.sql.Statement;
 public class CreateTable {
 
     public void createTableRun() {
-        Connection c = null;
-        Statement stmt = null;
+        Connection c;
+        Statement stmt;
         try {
             c = DriverManager.getConnection("jdbc:postgresql://localhost:5432/testconnectiondb", "postgres", "123");
             System.out.println("Opened database successfully");

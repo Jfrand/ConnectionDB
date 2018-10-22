@@ -39,7 +39,7 @@ public class ManageEmployee {
     }
 
     /* Method to CREATE an employee in the database */
-    public Integer addEmployee(String fname, String lname, int salary){
+    private Integer addEmployee(String fname, String lname, int salary){
         Session session = factory.openSession();
         Transaction tx = null;
         Integer employeeID = null;
@@ -59,7 +59,7 @@ public class ManageEmployee {
     }
 
     /* Method to  READ all the employees */
-    public void listEmployees( ){
+    private void listEmployees( ){
         Session session = factory.openSession();
         Transaction tx = null;
 
@@ -82,7 +82,7 @@ public class ManageEmployee {
     }
 
     /* Method to UPDATE salary for an employee */
-    public void updateEmployee(Integer EmployeeID, int salary ){
+    private void updateEmployee(Integer EmployeeID, int salary ){
         Session session = factory.openSession();
         Transaction tx = null;
 
@@ -101,7 +101,7 @@ public class ManageEmployee {
     }
 
     /* Method to DELETE an employee from the records */
-    public void deleteEmployee(Integer EmployeeID){
+    private void deleteEmployee(Integer EmployeeID){
         Session session = factory.openSession();
         Transaction tx = null;
 
